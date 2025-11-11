@@ -99,7 +99,7 @@ public class MusicStoreTest {
 
         store.purchaseMusic(customer, album);
 
-        double expectedDiscount = 50.00 * 0.25; // VIP discount (20%) + Jazz VIP bonus (5%)
+        double expectedDiscount = 50.00 * 0.25; // VIP discount (20%) + Pop Punk VIP bonus (5%)
 
         assertEquals(19, album.getStock(), "Stock should decrease by 1 after successful purchase");
         assertEquals(expectedDiscount, store.calculateDiscount(album, customer.getType()), 0.01, "Discount should match the calculated VIP discount");
