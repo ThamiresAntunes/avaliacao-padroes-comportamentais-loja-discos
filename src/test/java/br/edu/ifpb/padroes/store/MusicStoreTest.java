@@ -12,6 +12,7 @@ import org.junit.jupiter.api.Test;
 import java.time.LocalDate;
 import java.time.Month;
 import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -124,5 +125,4 @@ public class MusicStoreTest {
         assertEquals(expectedDiscount, store.calculateDiscount(album, customer.getType()), 0.01, "Discount should match the calculated discount");
         assertTrue(customer.getPurchases().contains(album), "Album should be added to customer's purchases");
     }
-
 }
